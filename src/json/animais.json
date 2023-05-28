@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "imagem": "/images/Animais.png",
+    "nome": "Dunga",
+    "idade": "2 anos",
+    "descricao": "Porte pequeno",
+    "tracos": "Calmo e educado",
+    "localizacao": "SP - São Paulo"
+  },
+  {
+    "id": 2,
+    "imagem": "/images/Animais2.png",
+    "nome": "Lua",
+    "idade": "6 meses",
+    "descricao": "Porte médio",
+    "tracos": "Ativa e carinhosa",
+    "localizacao": "RJ - Rio de janeiro"
+  },
+  {
+    "id": 3,
+    "imagem": "/images/Animais.png",
+    "nome": "Fiona",
+    "idade": "3 anos",
+    "descricao": "Porte pequeno",
+    "tracos": "Calma e carinhosa",
+    "localizacao": "RJ - Rio de janeiro"
+  }
+]

@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+}
+
+.imagemEsquerda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagemDireita {
+  position: absolute;
+  top: 160px;
+  right: 0;
+
+  width: 100px;
+}
+
+.imagemUsuario {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+
+  width: 40px;
+}
+
+/*formulario*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+.form label {
+  color: #3772ff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form textarea {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.mensagem {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #3772ff;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mensagem h2 {
+  margin-top: 20px;
+}
+
+.mensagem p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .imagemEsquerda {
+    width: 46%;
+  }
+
+  .imagemDireita {
+    width: 10%;
+    top: 220px;
+  }
+
+  .mensagem p {
+    margin-top: 35px;
+  }
+
+  .imagemUsuario {
+    position: absolute;
+    top: 28px;
+    right: 50px;
+
+    width: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .imagemEsquerda {
+    width: 47%;
+  }
+
+  .imagemDireita {
+    width: 8%;
+    top: 220px;
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.container section {
+  margin: 2em 7em;
+  
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imagemEsquerda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagemDireita {
+  position: absolute;
+  top: 160px;
+  right: 0;
+
+  width: 100px;
+}
+
+.imagemUsuario {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+
+  width: 40px;
+}
+
+.home {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #3772ff;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .imagemEsquerda {
+    width: 46%;
+  }
+
+  .imagemDireita {
+    width: 10%;
+    top: 220px;
+  }
+
+  .home p {
+    margin-top: 35px;
+  }
+
+  .imagemUsuario {
+    position: absolute;
+    top: 28px;
+    right: 50px;
+
+    width: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .imagemEsquerda {
+    width: 47%;
+  }
+
+  .imagemDireita {
+    width: 8%;
+    top: 220px;
+  }
+}

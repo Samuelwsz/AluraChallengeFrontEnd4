@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  width: auto;
+}
+
+.imagemEsquerda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagemDireita {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.imgMeio {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  z-index: 0;
+  text-align: center;
+
+  width: 230px;
+}
+
+.imgMeio img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loginInicio {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #3772ff;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loginInicio h2 {
+  margin-top: 20px;
+}
+
+.loginInicio p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .imagemEsquerda {
+    width: 46%;
+  }
+
+  .imagemDireita {
+    width: 10%;
+    top: 220px;
+  }
+  .imgMeio {
+    width: 30%;
+  }
+  .loginInicio img {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .imagemEsquerda {
+    width: 47%;
+  }
+
+  .imagemDireita {
+    width: 8%;
+    top: 220px;
+  }
+  .imgMeio {
+    width: 18%;
+  }
+}

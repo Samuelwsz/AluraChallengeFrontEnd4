@@ -1,0 +1,128 @@
+.container {
+  position: relative;
+}
+
+.imagemEsquerda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagemDireita {
+  position: absolute;
+  top: 160px;
+  right: 0;
+
+  width: 100px;
+}
+
+.patas {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 200px;
+}
+
+.cadastro {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #3772ff;
+
+  font-size: 18px;
+}
+
+.cadastro p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*formulario*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 70px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: #f6f6f6;
+  text-align: center;
+  outline: none;
+}
+
+.form .senha {
+  position: relative;
+}
+
+.form span {
+  color: grey;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.form .inputVerSenha {
+  position: absolute;
+  top: 75%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .imagemEsquerda {
+    width: 46%;
+  }
+
+  .imagemDireita {
+    width: 10%;
+    top: 220px;
+  }
+  .imgMeio {
+    width: 30%;
+  }
+  .cadastro img {
+    margin-top: 90px;
+  }
+  .patas {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .imagemEsquerda {
+    width: 47%;
+  }
+
+  .imagemDireita {
+    width: 8%;
+    top: 220px;
+  }
+  .imgMeio {
+    width: 18%;
+  }
+  .patas {
+    width: 180px;
+  }
+}
